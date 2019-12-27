@@ -1,9 +1,7 @@
 import React from 'react';
 
-import Aux from '../../hoc/Auxiliary';
-
 const layout = ( props ) => (
-  <Aux>
+  <React.Fragment>
     <div>
       Toolbar,
       SideDrawer,
@@ -12,7 +10,7 @@ const layout = ( props ) => (
     <main>
       {props.children}
     </main>
-  </Aux>
+    </React.Fragment>
 );
 
 export default layout;
