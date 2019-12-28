@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classes from './Layout.css';
+
 const layout = ( props ) => (
   <React.Fragment>
     <div>
@@ -7,7 +9,7 @@ const layout = ( props ) => (
       SideDrawer,
       Backdrop
     </div>
-    <main>
+    <main className={classes.Content}>
       {props.children}
     </main>
     </React.Fragment>
